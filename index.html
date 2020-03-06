@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Project AOS</title>
+    <style>
+        body {
+            background-color: #303030;
+            color: #e3e3e3;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 40%;
+            font-size: 24px;
+            margin: 100px 10px;
+            border: 1px solid #e3e3e3;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <h1 data-aos="flip-down" data-aos-duration="1000">Project AOS</h1>
+    </header>
+    <div class="cards">
+        <div class="card" data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000">
+            Card-1
+        </div>
+        <div class="card" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000">
+            Card-2
+        </div>
+        <div class="card" data-aos="fade" data-aos-delay="50" data-aos-duration="1000">
+            Card-3
+        </div>
+        <div class="card" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
+            Card-4
+        </div>
+        <div class="card" data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000">
+            Card-5
+        </div>
+        <div class="card" data-aos="slide-up" data-aos-delay="50" data-aos-duration="1000">
+            Card-6
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false
+        });
+    </script>
 </body>
+
 </html>
